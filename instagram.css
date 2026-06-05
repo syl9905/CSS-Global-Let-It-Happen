@@ -212,7 +212,7 @@ ilocation{display:block;position:relative;top:0px;font-weight:lighter;margin-lef
 /*----- INSTAGRAM COMMENTS -----*/
 .SOB_instal{width:380px;margin-right:10px;}
 .SOB_instatop3 {margin-bottom:-5px;display:flex;align-items: center;}
-.SOB_instatop3ava{width:40px;height:40px;background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);padding: 2px;outline: 2px solid var(--bg4);outline-offset: -4px;border-radius: 100px;margin-left: 20px;margin-right: 10px;}
+.SOB_instatop3ava{width:40px;height:40px;object-fit: cover;background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);padding: 2px;outline: 2px solid var(--bg4);outline-offset: -4px;border-radius: 100px;margin-left: 20px;margin-right: 10px;}
 .SOB_instatop3 iusername2{margin-right:0px;}
 .SOB_instatop3 i{opacity:0.3;margin-left:10px;}
 ifollowback{width:50px;background: #0095f6;color: #fff;font-weight: bolder;border-radius: 7px;height: fit-content;padding: 4px 15px;}
