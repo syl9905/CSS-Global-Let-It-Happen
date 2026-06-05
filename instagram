@@ -1,0 +1,232 @@
+/*----- INSTAGRAM -----*/
+.SOB_insta {
+    margin: auto;
+    width: 548px;
+    background: var(--bg3);
+    border-radius: 20px;
+    border: 2px solid var(--bg4);
+    outline: 1px solid var(--bg4);
+    outline-offset: 5px;
+    padding: 15px 0px;
+    color:var(--text2);
+}
+
+
+.SOB_instatop {
+
+
+    padding: 20px;
+}
+
+
+.SOB_instatop div {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.SOB_instatop div span {
+    font-weight: bolder;
+}
+
+
+.SOB_instarow2 {
+    display:block;
+    margin-bottom: 20px;
+    width:346px!important;
+}
+
+
+.SOB_instarow3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+iposts, ifollowers {
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+
+iusername {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+ibio {
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%
+}
+
+
+.SOB_instatopava{
+    width: 128px;
+    float: left;
+    margin-right: 30px;
+    height: 128px;
+    border-radius: 100px;
+    background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);
+    padding: 3px;
+    outline: 4px solid var(--bg4);
+    outline-offset: -7px;
+}
+
+
+ipsd {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+
+ifollow {
+    background: #0095f6;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 7px;
+    height: fit-content;
+    padding: 4px 15px;
+    margin-left: 15px;
+}
+
+
+icontact {
+    background: var(--bg1);
+    height: fit-content;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+
+.SOB_instastory {
+
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.SOB_instastory span {
+    display: grid;
+    margin: 0px 20px;
+    text-align: center;
+    justify-items: center;
+}
+
+
+.SOB_instastory img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    outline: 1px solid var(--bg2);
+    outline-offset: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.SOB_instamiddleonglets {
+
+
+    margin: auto;
+    border-top: 1px solid var(--bg2);
+    text-align: center;
+}
+
+
+.SOB_instaongletcont {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.SOB_instamiddleonglets img {
+    margin: 0px 2px;
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+}
+
+
+.SOB_instamiddleonglets span.SOB_instaongletcont {
+    display: none;
+}
+
+
+.SOB_instamiddleonglets input {
+    display: none;
+}
+
+
+.SOB_instamiddleonglets input:checked + span.SOB_instaongletcont {
+    display: block;
+}
+
+
+.SOB_instamiddleonglets label.SOB_instaonglets {
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 0px;
+    margin: 0px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.SOB_instamiddleonglets label.SOB_instaonglets i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+/*----- INSTAGRAM POST -----*/
+.SOB_instatop2{display:flex;align-items: center;justify-content: flex-start;margin-bottom:10px;flex-direction: row;}
+.SOB_instatop2 img{background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);padding: 2px;outline: 1px solid var(--bg4);outline-offset: -3px;border-radius:100px;margin-left:20px;    margin-right:10px;}
+.SOB_instamiddle2{margin:auto;text-align:center;}
+.SOB_instamiddle2 img{border-radius:4px;width:505px;height:600px;object-fit:cover;}
+.SOB_instabot{margin: 10px 20px;}
+.SOB_instabot span{display:block;margin:0px 0px -13px 0px;}
+.SOB_instabot b{font-size:13px;}
+.SOB_instabot i{font-size:20px;color:var(--text2);margin:0px 5px;}
+.SOB_instabot .cp-bookmark-o{position:relative;left:390px;}
+iusername2{margin-left:0px;margin-right:10px;font-weight:bolder;}
+ilocation{display:block;position:relative;top:0px;font-weight:lighter;margin-left:-2px;font-style:italic;opacity:.5}
+
+
+/*----- INSTAGRAM COMMENTS -----*/
+.SOB_instal{width:380px;margin-right:10px;}
+.SOB_instatop3 {margin-bottom:-5px;display:flex;align-items: center;}
+.SOB_instatop3ava{width:40px;height:40px;background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);padding: 2px;outline: 2px solid var(--bg4);outline-offset: -4px;border-radius: 100px;margin-left: 20px;margin-right: 10px;}
+.SOB_instatop3 iusername2{margin-right:0px;}
+.SOB_instatop3 i{opacity:0.3;margin-left:10px;}
+ifollowback{width:50px;background: #0095f6;color: #fff;font-weight: bolder;border-radius: 7px;height: fit-content;padding: 4px 15px;}
+.SOB_instaimgpost{margin:0px!important;outline:0px solid transparent!important;border-radius:4px!important;background:none!important;height:65px!important;width:70px!important;object-fit:cover;}
+
+
+/*----- INSTAGRAM STORY -----*/
+.SOB_instastorybloc{margin:auto;width:450px;height:601px;margin-bottom:10px;}
+.SOB_instabar{background:var(--transp2);width:430px;height:6px;margin:auto;border-radius:4px;position:relative;top:20px;}
+
+
+.SOB_instabar span{border-radius:4px;content:'';display:block;background:var(--transp2);width:300px;height:6px;}
+.SOB_instatop4{display:flex;position:relative;top:30px;}
+.SOB_instatop4 img{margin-left:10px;margin-bottom:10px;}
+itime{opacity:.5;font-style:italic;}
+.SOB_instastoryimg img{width:450px;border-radius:10px;margin-top:-55px;}
+.SOB_instastoryimg span{background:var(--transp2);display:block;text-align:center;position:relative;top:-280px;padding:5px 0px;width:100%;}
+.SOB_instabot4{text-align:right;top:-65px;position:relative;margin-right:10px;}
+.SOB_instabot4 i{;font-size:20px;margin:0px 4px;}
