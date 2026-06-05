@@ -131,6 +131,7 @@ icontact {
 .SOB_instastory img {
     height: 80px;
     width: 80px;
+    object-fit: cover;
     border-radius: 100px;
     outline: 1px solid var(--bg2);
     outline-offset: 4px;
