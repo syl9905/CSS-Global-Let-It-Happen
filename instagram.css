@@ -75,6 +75,7 @@ ibio {
     float: left;
     margin-right: 30px;
     height: 128px;
+    object-fit: cover;
     border-radius: 100px;
     background: linear-gradient(40deg,#ffc900,#FCAF45,#ff0d5f,#d300c5);
     padding: 3px;
