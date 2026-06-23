@@ -6844,6 +6844,7 @@ transition: 1s
   padding-left: 20px;
   padding-right: 15px;
   box-sizing: border-box;
+  text-align: justify;
   scrollbar-width: thin;
   scrollbar-color: var(--accent) var(--bg);
 }
