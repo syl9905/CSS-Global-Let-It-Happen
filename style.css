@@ -6998,352 +6998,328 @@ dloc {
 
 /* ================================================
    PROFIL MODERNISÉ — LET IT HAPPEN / WHITBY
-   À ajouter dans la feuille de styles Forumactif
+   Remplace entièrement le bloc spro_* existant
    ================================================ */
 
 /* --- Conteneur principal --- */
 .spro_1 {
-  display: flex;
-  min-height: 480px;
-  background: var(--color4);
-  border-radius: 6px;
-  overflow: hidden;
-  margin: auto;
-  width: 1020px;
+  display: flex !important;
+  flex-direction: row !important;
+  min-height: 600px !important;
+  width: 1020px !important;
+  margin: auto !important;
+  background: var(--color4) !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
 }
 
 /* ----------------------------------------
    COLONNE GAUCHE — avatar pleine hauteur
    ---------------------------------------- */
 .spro_2 {
-  width: 260px;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-  background: var(--mainstru);
-  border: none;
-  border-radius: 0;
+  width: 260px !important;
+  min-width: 260px !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: var(--mainstru) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  min-height: 600px !important;
+  box-sizing: border-box !important;
 }
 
-/* L'avatar remplit toute la colonne */
-.spro_2 #avatar_membre,
-.spro_2 #avatar_membre img {
-  display: block;
+/* Avatar : couvre toute la colonne */
+.spro_2 #avatar_membre {
+  display: block !important;
   width: 260px !important;
   height: 100% !important;
-  min-height: 480px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 0;
-  filter: sepia(30%) contrast(0.95);
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+.spro_2 #avatar_membre img {
+  display: block !important;
+  width: 260px !important;
+  height: 100% !important;
+  min-height: 600px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 0 !important;
+  filter: sepia(30%) contrast(0.95) !important;
+  max-width: none !important;
 }
 
 /* Tag forum en haut à gauche */
 .spro_forum_tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(233, 228, 218, 0.5);
-  z-index: 3;
+  position: absolute !important;
+  top: 16px !important;
+  left: 16px !important;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: rgba(233, 228, 218, 0.5) !important;
+  z-index: 3 !important;
 }
 
 /* Icônes de contact en haut à droite */
 .spro_contact_icons {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  z-index: 3;
+  position: absolute !important;
+  top: 14px !important;
+  right: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 7px !important;
+  z-index: 3 !important;
 }
 
 .spro_contact_icons a,
 .spro_contact_icons img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 4px;
-  background: rgba(233, 228, 218, 0.15);
-  border: 1px solid rgba(233, 228, 218, 0.3);
-  color: #e9e4da;
-  font-size: 15px;
-  text-decoration: none;
-  transition: background 0.3s;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 4px !important;
+  background: rgba(233, 228, 218, 0.15) !important;
+  border: 1px solid rgba(233, 228, 218, 0.3) !important;
+  color: #e9e4da !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: background 0.3s !important;
   filter: none !important;
-  object-fit: contain;
+  object-fit: contain !important;
+  box-sizing: border-box !important;
 }
 
-.spro_contact_icons a:hover {
-  background: rgba(233, 228, 218, 0.3);
-}
-
-/* Overlay bas de l'avatar : nom, faceclaim, groupe */
+/* Overlay bas : dégradé + infos */
 .spro_avatar_overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 40px 16px 18px 16px;
-  background: linear-gradient(to top, rgba(30, 22, 16, 0.82) 0%, transparent 100%);
-  z-index: 2;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 60px 16px 18px 16px !important;
+  background: linear-gradient(to top, rgba(20, 14, 8, 0.88) 0%, transparent 100%) !important;
+  z-index: 2 !important;
 }
 
-.spro_faceclaim {
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(233, 228, 218, 0.6);
-  margin-bottom: 4px;
+/* Faceclaim / rang au-dessus du pseudo */
+.spro_faceclaim_fc {
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: rgba(233, 228, 218, 0.55) !important;
+  margin-bottom: 5px !important;
+  display: block !important;
 }
 
-/* Pseudo en grand */
-.spro_username {
-  font-family: var(--font2);
-  font-size: 26px;
-  font-weight: 400;
-  color: #e9e4da;
-  line-height: 1.1;
-  margin-bottom: 8px;
-  text-transform: lowercase;
+/* Nom en grand */
+.spro_username_big {
+  font-family: var(--font2) !important;
+  font-size: 26px !important;
+  font-weight: 400 !important;
+  color: #e9e4da !important;
+  line-height: 1.1 !important;
+  margin-bottom: 10px !important;
+  text-transform: lowercase !important;
+  display: block !important;
 }
 
-/* Rang/groupe : pastille colorée */
+/* Pastille statut en ligne */
 .spro_badges_top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
 }
 
-/* Le rang forumactif s'affiche comme pastille */
-.spro_badges_top .postdetails,
-.spro_badges_top b,
-.spro_badges_top span {
-  display: inline-flex;
-  align-items: center;
-  background: rgba(90, 158, 158, 0.2);
-  border: 1px solid var(--hightide);
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 10px;
-  font-family: var(--font9);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--hightide);
-  font-style: normal;
-}
-
-/* Point de statut en ligne */
 .spro_online_dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--wisp);
-  display: inline-block;
-  font-size: 0;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: var(--wisp) !important;
+  display: block !important;
+}
+
+/* Masquer le texte brut "En ligne / Hors ligne" de FA et garder juste un point */
+.spro_online_dot img {
+  display: none !important;
 }
 
 /* ----------------------------------------
    COLONNE DROITE — infos & champs
    ---------------------------------------- */
 .spro_3 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 22px 22px 14px 22px;
-  background: var(--color4);
-  gap: 0;
-  min-width: 0;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 20px 20px 14px 20px !important;
+  background: var(--color4) !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
 }
 
-/* Grille de champs 2 colonnes */
+/* Grille 2 colonnes pour les champs */
 .spro_fields_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-bottom: 16px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 7px !important;
+  margin-bottom: 14px !important;
 }
 
 .spro_field_cell {
-  background: rgba(92, 80, 66, 0.06);
-  border: 1px solid rgba(148, 121, 87, 0.22);
-  border-radius: 4px;
-  padding: 9px 12px;
+  background: rgba(92, 80, 66, 0.06) !important;
+  border: 1px solid rgba(148, 121, 87, 0.22) !important;
+  border-radius: 4px !important;
+  padding: 8px 11px !important;
+  box-sizing: border-box !important;
 }
 
 .spro_field_label {
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color2);
-  margin-bottom: 3px;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--color2) !important;
+  margin-bottom: 3px !important;
+  display: block !important;
 }
 
 .spro_field_value {
-  font-family: var(--font6);
-  font-size: 13px;
-  color: var(--text2);
+  font-family: var(--font6) !important;
+  font-size: 13px !important;
+  color: var(--text2) !important;
+  display: block !important;
+  word-break: break-word !important;
 }
 
 /* Feuille de personnage */
 .spro_frpg_bloc {
-  flex: 1;
-  background: rgba(92, 80, 66, 0.05);
-  border: 1px solid rgba(148, 121, 87, 0.18);
-  border-radius: 4px;
-  padding: 12px 14px;
-  margin-bottom: 14px;
-  overflow: hidden;
+  background: rgba(92, 80, 66, 0.05) !important;
+  border: 1px solid rgba(148, 121, 87, 0.18) !important;
+  border-radius: 4px !important;
+  padding: 11px 13px !important;
+  margin-bottom: 12px !important;
+  flex: 1 !important;
 }
 
 .spro_frpg_title {
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color2);
-  border-bottom: 1px solid rgba(148, 121, 87, 0.18);
-  padding-bottom: 6px;
-  margin-bottom: 10px;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--color2) !important;
+  border-bottom: 1px solid rgba(148, 121, 87, 0.18) !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 9px !important;
+  display: block !important;
 }
 
 .spro_frpg {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  max-height: 180px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--mainstru) transparent;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  max-height: 160px !important;
+  overflow-y: auto !important;
+  scrollbar-width: thin !important;
 }
 
 .spro_rpg_row {
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
+  display: flex !important;
+  gap: 10px !important;
+  align-items: baseline !important;
 }
 
 .spro_rpg_label {
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color2);
-  min-width: 100px;
-  flex-shrink: 0;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--color2) !important;
+  min-width: 110px !important;
+  flex-shrink: 0 !important;
 }
 
 .spro_rpg_value {
-  font-family: var(--font6);
-  font-size: 12px;
-  color: var(--text2);
+  font-family: var(--font6) !important;
+  font-size: 12px !important;
+  color: var(--text2) !important;
 }
 
 /* Awards */
 .spro_awards_bloc {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 12px;
-  min-height: 10px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+  margin-bottom: 10px !important;
 }
 
 /* Liens en bas */
 .spro_links {
-  display: flex;
-  gap: 6px;
-  justify-content: flex-end;
-  border-top: 1px solid rgba(148, 121, 87, 0.18);
-  padding-top: 12px;
-  margin-top: auto;
+  display: flex !important;
+  gap: 6px !important;
+  justify-content: flex-end !important;
+  border-top: 1px solid rgba(148, 121, 87, 0.18) !important;
+  padding-top: 11px !important;
+  margin-top: auto !important;
+  flex-wrap: wrap !important;
 }
 
 .spro_links a {
-  font-family: var(--font9);
-  font-size: 9px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color2);
-  border: 1px solid rgba(148, 121, 87, 0.4);
-  border-radius: 3px;
-  padding: 4px 10px;
-  text-decoration: none;
-  transition: background 0.3s;
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--color2) !important;
+  border: 1px solid rgba(148, 121, 87, 0.4) !important;
+  border-radius: 3px !important;
+  padding: 4px 10px !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  transition: background 0.3s !important;
 }
 
 .spro_links a:hover {
-  background: var(--mainstru);
+  background: var(--mainstru) !important;
+}
+
+/* Neutraliser les anciennes règles de FA sur ces éléments */
+.spro_2 .spro_rang,
+.spro_2 .spro_avarang,
+.spro_2 .spro_avatar,
+.spro_2 .spro_rang2,
+.spro_2 .spro_username {
+  display: none !important;
 }
 
 /* ----------------------------------------
    THÈME SOMBRE
    ---------------------------------------- */
-[data-color-scheme="dark"] .spro_1 {
-  background: var(--color4);
-}
-
-[data-color-scheme="dark"] .spro_2 {
-  background: var(--bg2);
-}
-
-[data-color-scheme="dark"] .spro_2 #avatar_membre img {
-  filter: sepia(20%) contrast(0.9) brightness(0.85);
-}
-
 [data-color-scheme="dark"] .spro_field_cell {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(148, 121, 87, 0.18);
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(148, 121, 87, 0.18) !important;
 }
 
 [data-color-scheme="dark"] .spro_frpg_bloc {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(148, 121, 87, 0.15);
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(148, 121, 87, 0.15) !important;
+}
+
+[data-color-scheme="dark"] .spro_2 #avatar_membre img {
+  filter: sepia(20%) contrast(0.9) brightness(0.8) !important;
 }
 
 [data-color-scheme="dark"] .spro_links a:hover {
-  background: var(--bg3);
-}
-
-/* ----------------------------------------
-   COULEURS DE GROUPES pour la pastille rang
-   Adapter selon les slugs de groupes réels
-   ---------------------------------------- */
-.spro_badges_top .darksky_rank {
-  border-color: var(--darksky);
-  color: var(--darksky);
-  background: rgba(107, 140, 173, 0.15);
-}
-
-.spro_badges_top .moorland_rank {
-  border-color: var(--moorland);
-  color: var(--moorland);
-  background: rgba(176, 104, 152, 0.15);
-}
-
-.spro_badges_top .hightide_rank {
-  border-color: var(--hightide);
-  color: var(--hightide);
-  background: rgba(90, 158, 158, 0.15);
-}
-
-.spro_badges_top .wisp_rank {
-  border-color: var(--wisp);
-  color: var(--wisp);
-  background: rgba(122, 170, 136, 0.15);
+  background: var(--bg3) !important;
 }
