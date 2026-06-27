@@ -7296,3 +7296,356 @@ dloc {
         grid-template-columns: 1fr !important;
     }
 }
+
+
+/* ================================================
+   PROFIL MODERNISÉ — LET IT HAPPEN / WHITBY
+   À ajouter dans la feuille de styles Forumactif
+   ================================================ */
+
+/* --- Conteneur principal --- */
+.spro_1 {
+  display: flex;
+  min-height: 480px;
+  background: var(--color4);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 1020px;
+}
+
+/* ----------------------------------------
+   COLONNE GAUCHE — avatar pleine hauteur
+   ---------------------------------------- */
+.spro_2 {
+  width: 260px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--mainstru);
+  border: none;
+  border-radius: 0;
+}
+
+/* L'avatar remplit toute la colonne */
+.spro_2 #avatar_membre,
+.spro_2 #avatar_membre img {
+  display: block;
+  width: 260px !important;
+  height: 100% !important;
+  min-height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 0;
+  filter: sepia(30%) contrast(0.95);
+}
+
+/* Tag forum en haut à gauche */
+.spro_forum_tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(233, 228, 218, 0.5);
+  z-index: 3;
+}
+
+/* Icônes de contact en haut à droite */
+.spro_contact_icons {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  z-index: 3;
+}
+
+.spro_contact_icons a,
+.spro_contact_icons img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: rgba(233, 228, 218, 0.15);
+  border: 1px solid rgba(233, 228, 218, 0.3);
+  color: #e9e4da;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
+  filter: none !important;
+  object-fit: contain;
+}
+
+.spro_contact_icons a:hover {
+  background: rgba(233, 228, 218, 0.3);
+}
+
+/* Overlay bas de l'avatar : nom, faceclaim, groupe */
+.spro_avatar_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 16px 18px 16px;
+  background: linear-gradient(to top, rgba(30, 22, 16, 0.82) 0%, transparent 100%);
+  z-index: 2;
+}
+
+.spro_faceclaim {
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(233, 228, 218, 0.6);
+  margin-bottom: 4px;
+}
+
+/* Pseudo en grand */
+.spro_username {
+  font-family: var(--font2);
+  font-size: 26px;
+  font-weight: 400;
+  color: #e9e4da;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+}
+
+/* Rang/groupe : pastille colorée */
+.spro_badges_top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Le rang forumactif s'affiche comme pastille */
+.spro_badges_top .postdetails,
+.spro_badges_top b,
+.spro_badges_top span {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(90, 158, 158, 0.2);
+  border: 1px solid var(--hightide);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-family: var(--font9);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--hightide);
+  font-style: normal;
+}
+
+/* Point de statut en ligne */
+.spro_online_dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--wisp);
+  display: inline-block;
+  font-size: 0;
+}
+
+/* ----------------------------------------
+   COLONNE DROITE — infos & champs
+   ---------------------------------------- */
+.spro_3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 22px 14px 22px;
+  background: var(--color4);
+  gap: 0;
+  min-width: 0;
+}
+
+/* Grille de champs 2 colonnes */
+.spro_fields_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.spro_field_cell {
+  background: rgba(92, 80, 66, 0.06);
+  border: 1px solid rgba(148, 121, 87, 0.22);
+  border-radius: 4px;
+  padding: 9px 12px;
+}
+
+.spro_field_label {
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color2);
+  margin-bottom: 3px;
+}
+
+.spro_field_value {
+  font-family: var(--font6);
+  font-size: 13px;
+  color: var(--text2);
+}
+
+/* Feuille de personnage */
+.spro_frpg_bloc {
+  flex: 1;
+  background: rgba(92, 80, 66, 0.05);
+  border: 1px solid rgba(148, 121, 87, 0.18);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.spro_frpg_title {
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color2);
+  border-bottom: 1px solid rgba(148, 121, 87, 0.18);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.spro_frpg {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mainstru) transparent;
+}
+
+.spro_rpg_row {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.spro_rpg_label {
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color2);
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.spro_rpg_value {
+  font-family: var(--font6);
+  font-size: 12px;
+  color: var(--text2);
+}
+
+/* Awards */
+.spro_awards_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+  min-height: 10px;
+}
+
+/* Liens en bas */
+.spro_links {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(148, 121, 87, 0.18);
+  padding-top: 12px;
+  margin-top: auto;
+}
+
+.spro_links a {
+  font-family: var(--font9);
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color2);
+  border: 1px solid rgba(148, 121, 87, 0.4);
+  border-radius: 3px;
+  padding: 4px 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.spro_links a:hover {
+  background: var(--mainstru);
+}
+
+/* ----------------------------------------
+   THÈME SOMBRE
+   ---------------------------------------- */
+[data-color-scheme="dark"] .spro_1 {
+  background: var(--color4);
+}
+
+[data-color-scheme="dark"] .spro_2 {
+  background: var(--bg2);
+}
+
+[data-color-scheme="dark"] .spro_2 #avatar_membre img {
+  filter: sepia(20%) contrast(0.9) brightness(0.85);
+}
+
+[data-color-scheme="dark"] .spro_field_cell {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(148, 121, 87, 0.18);
+}
+
+[data-color-scheme="dark"] .spro_frpg_bloc {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(148, 121, 87, 0.15);
+}
+
+[data-color-scheme="dark"] .spro_links a:hover {
+  background: var(--bg3);
+}
+
+/* ----------------------------------------
+   COULEURS DE GROUPES pour la pastille rang
+   Adapter selon les slugs de groupes réels
+   ---------------------------------------- */
+.spro_badges_top .darksky_rank {
+  border-color: var(--darksky);
+  color: var(--darksky);
+  background: rgba(107, 140, 173, 0.15);
+}
+
+.spro_badges_top .moorland_rank {
+  border-color: var(--moorland);
+  color: var(--moorland);
+  background: rgba(176, 104, 152, 0.15);
+}
+
+.spro_badges_top .hightide_rank {
+  border-color: var(--hightide);
+  color: var(--hightide);
+  background: rgba(90, 158, 158, 0.15);
+}
+
+.spro_badges_top .wisp_rank {
+  border-color: var(--wisp);
+  color: var(--wisp);
+  background: rgba(122, 170, 136, 0.15);
+}
