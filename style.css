@@ -7169,7 +7169,7 @@ dloc {
 /* Grille 2 colonnes pour les champs */
 .spro_fields_grid {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: 1fr !important;
   gap: 7px !important;
   margin-bottom: 14px !important;
 }
@@ -7375,9 +7375,8 @@ dloc {
 /* Grille dans les panneaux */
 .spro_panel .spro_fields_grid {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: 1fr !important;
   gap: 7px !important;
   width: 100% !important;
   align-content: start !important;
 }
-
