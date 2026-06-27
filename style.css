@@ -7196,6 +7196,14 @@ dloc {
   word-break: break-word !important;
 }
 
+.spro_field_cell {
+  background: rgba(92, 80, 66, 0.06) !important;
+  border: 1px solid rgba(148, 121, 87, 0.22) !important;
+  border-radius: 4px !important;
+  padding: 8px 11px !important;
+  box-sizing: border-box !important;
+}
+
 /* Feuille de personnage */
 .spro_frpg_bloc {
   background: rgba(92, 80, 66, 0.05) !important;
