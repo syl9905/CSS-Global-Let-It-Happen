@@ -7006,7 +7006,7 @@ dloc {
   display: flex !important;
   flex-direction: row !important;
   min-height: 600px !important;
-  width: 920px !important;
+  width: 1020px !important;
   margin: auto !important;
   background: var(--color4) !important;
   border-radius: 6px !important;
@@ -7169,12 +7169,7 @@ dloc {
 /* Grille 2 colonnes pour les champs */
 .spro_fields_grid {
   display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 7px !important;
-  margin-bottom: 14px !important;
-}
-
-.spro_field_cell {
+  grid-template-columns: 1fr 1fr !important;
   background: rgba(92, 80, 66, 0.06) !important;
   border: 1px solid rgba(148, 121, 87, 0.22) !important;
   border-radius: 4px !important;
@@ -7375,8 +7370,44 @@ dloc {
 /* Grille dans les panneaux */
 .spro_panel .spro_fields_grid {
   display: grid !important;
-  grid-template-columns: 1fr !important;
+  grid-template-columns: 1fr 1fr !important;
   gap: 7px !important;
   width: 100% !important;
+  align-content: start !important;
+}
+
+/* ── Font Awesome (si pas déjà chargé dans ton forum) ── */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* ── Icônes de contact : remplacement des images FA ── */
+.spro_contact_icons a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 4px !important;
+  background: rgba(233, 228, 218, 0.15) !important;
+  border: 1px solid rgba(233, 228, 218, 0.3) !important;
+  text-decoration: none !important;
+  transition: background 0.3s !important;
+  color: #e9e4da !important;
+}
+
+.spro_contact_icons a:hover {
+  background: rgba(233, 228, 218, 0.3) !important;
+}
+
+.spro_contact_icons a i {
+  font-size: 14px !important;
+  color: #e9e4da !important;
+  line-height: 1 !important;
+}
+
+/* Masquer les images natives FA dans les liens contact */
+.spro_contact_icons a img {
+  display: none !important;
+}
+
   align-content: start !important;
 }
