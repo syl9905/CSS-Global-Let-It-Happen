@@ -7323,3 +7323,61 @@ dloc {
 [data-color-scheme="dark"] .spro_links a:hover {
   background: var(--bg3) !important;
 }
+
+/* ----------------------------------------
+   ONGLETS
+   ---------------------------------------- */
+.spro_tabs {
+  display: flex !important;
+  gap: 6px !important;
+  margin-bottom: 14px !important;
+  border-bottom: 1px solid rgba(148, 121, 87, 0.22) !important;
+  padding-bottom: 0 !important;
+}
+
+.spro_tab {
+  font-family: var(--font9) !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--color2) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  padding: 6px 12px !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  margin-bottom: -1px !important;
+}
+
+.spro_tab:hover {
+  color: var(--color1) !important;
+}
+
+.spro_tab_active {
+  color: var(--color1) !important;
+  border-bottom: 2px solid var(--color1) !important;
+}
+
+/* Panneaux : masqués par défaut */
+.spro_panel {
+  display: none !important;
+  flex: 1 !important;
+  flex-direction: column !important;
+}
+
+.spro_panel_active {
+  display: flex !important;
+}
+
+/* Grille dans les panneaux */
+.spro_panel .spro_fields_grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 7px !important;
+  width: 100% !important;
+  align-content: start !important;
+}
+
