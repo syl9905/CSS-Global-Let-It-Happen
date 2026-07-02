@@ -28,8 +28,8 @@
   --color4: #e9e4da;
   --bgimgcolor: #d6d6d8;
   --bgimg: url('https://transparenttextures.com/patterns/3px-tile.png');
-  --bgheader: url('https://i.ibb.co/YFjNn0Bw/Green-Yellow-Modern-Farming-Presentation-169-4.png');
-  --catpic: url('https://i.ibb.co/2Y0jvJdW/catpic-light-juin2026.png');
+  --bgheader: url('https://i.ibb.co/1f2KyZh3/header-light-juillet2026.gif');
+  --catpic: url('https://i.ibb.co/C32RtL81/catpic-light-juillet2026.png');
   --fond: linear-gradient(180deg, #d7d7d9 20%,#d7d7d9 80%,#6a5569);
   --size1: 3.6em;
   --size2: 1em;
@@ -93,8 +93,8 @@
     --bgimgcolor: #191919;
     --fond: linear-gradient(180deg, #202020 20%, #202020 80%, #c7dbf2);
     --bgimg: url('https://transparenttextures.com/patterns/3px-tile.png');
-    --bgheader: url('https://i.ibb.co/R4PvqDjj/header-dark-juin2026.png');
-    --catpic: url('https://i.ibb.co/RK79dtd/catpic-dark-juin2026.png');
+    --bgheader: url('https://i.ibb.co/T5hVZRD/header-dark-juillet2026.gif');
+    --catpic: url('https://i.ibb.co/WpBdGNJ9/catpic-dark-juillet2026.png');
     --transp1: rgba(255,255,255,0.5);
     --transp2: rgb(50 50 50 / 50%);
     --transp3: rgba(32, 34, 37, 0.5);
